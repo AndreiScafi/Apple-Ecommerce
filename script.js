@@ -1,23 +1,23 @@
 /* Slideshow */
 
-/* const slideshowDivs = () => {
+const slideshowDivs = () => {
     for (let i = 1; i <= 5; i++) {
 
         const div = document.createElement('div');
 
-        div.style.backgroundImage = `url(images/slideshow/section-1-bg-${i}.jpg)`; */
+        div.style.backgroundImage = `url(images/slideshow/section-1-bg-${i}.jpg)`;
 
-/*   if (i === 1) {
-      div.classList.add('change');
-  } */
+        /*   if (i === 1) {
+              div.classList.add('change');
+          } */
 
-/*         i === 1 && div.classList.add('change');
+        i === 1 && div.classList.add('change');
 
         document.querySelector('.slideshow').appendChild(div);
     }
-} */
+}
 
-/* slideshowDivs();
+slideshowDivs();
 
 const divs = document.querySelectorAll('.slideshow div');
 
@@ -40,13 +40,13 @@ const slideshow = () => {
     }, 20000)
 }
 
-slideshow(); */
+slideshow();
 
 /* End of Slideshow */
 
-/* My own reproduction of the code whithout following the tutorial */
+/* My own reproduction of the code without following the tutorial */
 
-const slideshowDiv = () => {
+/* const slideshowDiv = () => {
     for (let i = 1; i <= 5; i++) {
 
         const div = document.createElement('div');
@@ -84,6 +84,6 @@ const slideshow = () => {
     }, 20000)
 }
 
-slideshow();
+slideshow(); */
 
-/* End My own reproduction of the code whithout following the tutorial */
+/* End My own reproduction of the code without following the tutorial */
