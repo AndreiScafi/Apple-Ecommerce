@@ -7,6 +7,12 @@ const slideshowDivs = () => {
 
         div.style.backgroundImage = `url(images/slideshow/section-1-bg-${i}.jpg)`;
 
+        /*   if (i === 1) {
+              div.classList.add('change');
+          } */
+
+        i === 1 && div.classList.add('change');
+
         document.querySelector('.slideshow').appendChild(div);
     }
 }

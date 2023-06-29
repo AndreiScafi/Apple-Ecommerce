@@ -142,4 +142,31 @@ html {
 
 /* End of Banner */
 
+/* Slideshow */
+
+.slideshow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.slideshow div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.slideshow div.change {
+    opacity: 1;
+}
+
+/* End of Slideshow */
+
 /* End of Section 1 */
