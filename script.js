@@ -42,6 +42,23 @@ slideshow(); */
 
 /* End My own reproduction of the code without following the tutorial */
 
+/* Cube Controls*/
+
+const cube = document.querySelector('.cube');
+
+let y = 0;
+
+const playPause = () => {
+    setInterval(() => {
+        cube.style.transform = `rotateY(${y++}deg)`
+    }, 100);
+}
+
+playPause();
+
+
+/* End of Cube Controls */
+
 /* Slideshow */
 
 const slideshowDivs = () => {
