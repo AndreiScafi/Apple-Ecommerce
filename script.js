@@ -171,4 +171,59 @@ window.addEventListener('scroll', () => {
 
 /* Section 4 */
 
+const watchBand = document.querySelector('.watch-bands');
+const watchCase = document.querySelector('.watch-cases');
+
+const watchUpControl = document.querySelector('.watch-top-control');
+const watchDownControl = document.querySelector('.watch-bottom-control');
+const watchRightControl = document.querySelector('.watch-right-control');
+const watchLeftControl = document.querySelector('.watch-left-control');
+
+let axisY = 0;
+let axisX = 0;
+
+const hideControl = () => {
+    if (axisY <= -280) {
+        watchUpControl.classList.add('hide-control');
+    } else {
+        watchUpControl.classList.remove('hide-control');
+    }
+
+    if (axisY >= 280) {
+        watchDownControl.classList.add('hide-control');
+    } else {
+        watchDownControl.classList.remove('hide-control');
+    }
+
+    if (axisX <= -280) {
+        watchRightControl.classList.add('hide-control');
+    } else {
+        watchRightControl.classList.remove('hide-control');
+    }
+
+    if (axisX >= 280) {
+        watchLeftControl.classList.add('hide-control');
+    } else {
+        watchLeftControl.classList.remove('hide-control');
+    }
+
+};
+
+watchUpControl.addEventListener('click', () => {
+    watchCase.style.marginTop = `${axisY -= 70}rem`
+    hideControl();
+});
+watchDownControl.addEventListener('click', () => {
+    watchCase.style.marginTop = `${axisY += 70}rem`
+    hideControl();
+});
+watchRightControl.addEventListener('click', () => {
+    watchBand.style.marginRight = `${axisX -= 70}rem`
+    hideControl();
+});
+watchLeftControl.addEventListener('click', () => {
+    watchBand.style.marginRight = `${axisX += 70}rem`
+    hideControl();
+});
+
 /* End of Section 4 */
