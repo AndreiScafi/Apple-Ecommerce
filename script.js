@@ -42,6 +42,16 @@ slideshow(); */
 
 /* End My own reproduction of the code without following the tutorial */
 
+/* Common JS */
+
+document.querySelectorAll('.watch-control, .controls a').forEach(control => {
+    control.addEventListener('click', e => {
+        e.preventDefault();
+    })
+})
+
+/* End of Common JS */
+
 /* Cube Controls*/
 
 const cube = document.querySelector('.cube');
@@ -158,3 +168,7 @@ window.addEventListener('scroll', () => {
     }
 })
 /* End of Section 3 */
+
+/* Section 4 */
+
+/* End of Section 4 */
