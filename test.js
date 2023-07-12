@@ -97,6 +97,12 @@ document.querySelector('.controls').addEventListener('mouseout', () => {
 }); 
 */
 
+document.querySelectorAll('.watch-control, controls a').forEach(control => {
+    control.addEventListener('click', e => {
+        e.preventDefault();
+    })
+})
+
 
 
 const slideshowDivs = () => {
