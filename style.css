@@ -686,7 +686,7 @@ html {
 }
 
 .watch-top-control {
-    top: 30vh;
+    top: 20vh;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -698,7 +698,7 @@ html {
 }
 
 .watch-bottom-control {
-    bottom: 30vh;
+    bottom: 20vh;
     left: 50%;
     transform: translateX(-50%);
 }
